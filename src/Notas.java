@@ -1,6 +1,4 @@
-
-public class Notas 
-{
+public class Notas {
 	private Integer notas [][] = new Integer [2][3];
 	
 	public Notas ()	{}
