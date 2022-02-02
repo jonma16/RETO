@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
-public class Ciclo_formativo {
+public class Ciclo_formativo 
+{
 	private String nombre_ciclo;
 	private ArrayList<Integer> grupos;
     

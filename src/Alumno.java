@@ -1,4 +1,5 @@
-public class Alumno {
+public class Alumno 
+{
     private String nombre;
     private String apellido;
     private Integer codigo;
@@ -15,11 +16,11 @@ public class Alumno {
     	return this.codigo;
     }
     
-    public static void guardarNota(int nota, int modulo, int evaluacion) {
+    public void guardarNota(int nota, int modulo, int evaluacion) {
     	Notas.setNota(nota,modulo,evaluacion);
     }
     
-    public static int mostrarNota(int modulo, int evaluacion) {
+    public int mostrarNota(int modulo, int evaluacion) {
     	return Notas.getNota(modulo,evaluacion);
     }
     

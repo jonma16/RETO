@@ -1,11 +1,12 @@
-public class Notas {
-	private Integer notas [][] = new Integer [2][3];
+public class Notas 
+{
+	private static Integer notas [][] = new Integer [2][3];
 	
 	public Notas ()	{}
 	// en un array al ser el 0 el primer numero, hay que quitarle 1 al valor que metemos.
 	// Matematicas = 1 Lengua = 2
 	// Cuando no hay nota el valor es -1
-	public Integer getNota (int modulo, int evaluacion)
+	public static Integer getNota (int modulo, int evaluacion)
 	{
 		if (notas[modulo-1][evaluacion-1] == null)
 		{
@@ -16,7 +17,7 @@ public class Notas {
 			return notas [modulo-1][evaluacion-1];
 		}
 	}
-	public void setNota (int nota, int modulo, int evaluacion)
+	public static void setNota (int nota, int modulo, int evaluacion)
 	{
 		notas [modulo-1][evaluacion-1] = nota;
 	}

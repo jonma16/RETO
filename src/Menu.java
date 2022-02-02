@@ -1,4 +1,5 @@
-public class Menu {
+public class Menu 
+{
 
     public static void main(String[] args) {
    	 Ciclo_formativo c1=new Ciclo_formativo("Informatica");

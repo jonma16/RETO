@@ -1,7 +1,8 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class Grupo {
+public class Grupo 
+{
     private ArrayList<Integer> alumnos;  
     private String nombre;
 	private int idGrupo;
