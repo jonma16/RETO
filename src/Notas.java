@@ -17,8 +17,18 @@ public class Notas
 			return notas [modulo-1][evaluacion-1];
 		}
 	}
-	public static void setNota (int nota, int modulo, int evaluacion)
+	public static void setNota (int nota, int modulo, int evaluacion) throws Exception
 	{
-		notas [modulo-1][evaluacion-1] = nota;
+		if (modulo < 1 || modulo > 2) {
+			throw new Exception("El modulo no entra dentro del rango");
+		}
+		else if (evaluacion < 1 || evaluacion > 3) {
+			throw new Exception("La evaluación no entra dentro del rango");
+		}
+		else if (nota < 0 || nota > 10) {
+			throw new Exception("La nota no entra dentro del rango");
+		}else {
+			notas [modulo-1][evaluacion-1] = nota;
+		}
 	}
 }

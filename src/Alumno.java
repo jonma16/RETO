@@ -16,7 +16,7 @@ public class Alumno
     	return this.codigo;
     }
     
-    public void guardarNota(int nota, int modulo, int evaluacion) {
+    public void guardarNota(int nota, int modulo, int evaluacion) throws Exception {
     	Notas.setNota(nota,modulo,evaluacion);
     }
     

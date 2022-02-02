@@ -7,21 +7,21 @@ public class Grupo
     private String nombre;
 	private int idGrupo;
 	private static int contGrupo=0;
-	private int contador=0;
     
 	public Grupo(String nombre) {
    	 this.nombre=nombre;
     	this.idGrupo = contGrupo;
     	contGrupo++;
+    	alumnos = new ArrayList<Integer>();
 	}
     
-	public void guardarAlumno(int codigoAlumno) {
+	public void guardarAlumno(Integer codigoAlumno) {
    	 alumnos.add(codigoAlumno);
 	}
     
-	public int mostrarAlumnos() {
+	public void mostrarAlumnos() {
    	 for (int i = 0; i < alumnos.size(); i++) {
-   		 return this.alumnos.get(i);
+   		 System.out.println(this.alumnos.get(i)); 
    	 }
    	 
 	}

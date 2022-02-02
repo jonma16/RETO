@@ -8,15 +8,16 @@ public class Ciclo_formativo
    	//Constructor
 	public Ciclo_formativo(String nc) {
         	this.nombre_ciclo=nc;
+        	grupos= new ArrayList<Integer>();
 	}
     
-	public void guardarGrupo(int codigoIDGrupo) {
+	public void guardarGrupo(Integer codigoIDGrupo) {
    	 grupos.add(codigoIDGrupo);
 	}
     
-	public int mostrarGrupos() {
+	public void mostrarGrupos() {
    	for (int i = 0; i < grupos.size(); i++) {
-   		 return this.grupos.get(i);
+   		 System.out.println(this.grupos.get(i));
 	 }
    	 
 	}

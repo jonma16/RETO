@@ -1,7 +1,7 @@
 public class Menu 
 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
    	 Ciclo_formativo c1=new Ciclo_formativo("Informatica");
    	 
    	 Grupo g1=new Grupo("Grupo ingles");
